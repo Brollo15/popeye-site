@@ -88,7 +88,9 @@ p { margin: 0 0 1em; }
 .site-header.is-scrolled, body.nav-open .site-header { background: var(--red); box-shadow: 0 6px 20px -10px rgba(0, 0, 0, .4); }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; }
-.logo-mark svg { width: 44px; height: 44px; filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .25)); }
+.logo-mark { width: 56px; height: 56px; border-radius: 50%; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .3)); transition: transform .2s ease; }
+.logo:hover .logo-mark { transform: rotate(-6deg) scale(1.05); }
+.footer-logo { width: 120px; height: 120px; border-radius: 50%; box-shadow: 0 8px 24px -8px rgba(0, 0, 0, .5); }
 .logo-text { display: flex; flex-direction: column; line-height: 1; }
 .logo-text strong { font-family: var(--font-display); font-size: 1.7rem; font-weight: 800; letter-spacing: .5px; color: var(--yellow); text-shadow: 0 2px 0 rgba(0, 0, 0, .2); }
 .logo-text small { font-size: .72rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #fff; margin-top: 2px; }
